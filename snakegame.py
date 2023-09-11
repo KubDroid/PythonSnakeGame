@@ -1,4 +1,5 @@
 import pygame
+import sys
 import time
 import random
  
@@ -19,7 +20,7 @@ blue = pygame.Color(0, 0, 255)
 pygame.init()
  
 # Initialise game window
-pygame.display.set_caption('GeeksforGeeks Snakes')
+pygame.display.set_caption('Kubi Snakes Game')
 game_window = pygame.display.set_mode((window_x, window_y))
  
 # FPS (frames per second) controller
