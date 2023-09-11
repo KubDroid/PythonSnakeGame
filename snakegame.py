@@ -16,6 +16,8 @@ white = pygame.Color(255, 255, 255)
 red = pygame.Color(255, 0, 0)
 green = pygame.Color(0, 255, 0)
 blue = pygame.Color(0, 0, 255)
+orange = pygame.Color(255, 128, 0)
+gray = pygame.Color(128, 128, 128)
  
 # Initialising pygame
 pygame.init()
@@ -186,12 +188,12 @@ def main():
                             random.randrange(1, (window_y//10)) * 10]
             
         fruit_spawn = True
-        game_window.fill(black)
+        game_window.fill(gray)
         
         for pos in snake_body:
-            pygame.draw.rect(game_window, green,
+            pygame.draw.rect(game_window, orange,
                             pygame.Rect(pos[0], pos[1], 10, 10))
-        pygame.draw.rect(game_window, white, pygame.Rect(
+        pygame.draw.rect(game_window, green, pygame.Rect(
             fruit_position[0], fruit_position[1], 10, 10))
     
         # Game Over conditions
